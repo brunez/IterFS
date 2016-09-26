@@ -47,8 +47,8 @@ function [ R ] = iter_fs( data, k,  MAX_ITER, ZERO)
         %[~,SE,VE]=svdecon(E);
         compact_E = SE*VE';
         F = SE*compact_E;
-        f = sum(F.^2); % scores_num = np.sum(np.power(scores_matrix,2), axis=0)
-        g = sum(compact_E.^2); % scores_den = np.sum(np.power(compact_E,2), axis=0)
+        f = sum(F.^2);
+        g = sum(compact_E.^2);
     else
         F = E'*E;
         f = sum(F.^2);
