@@ -18,3 +18,11 @@ The algorithm provides an approximate solution to the Column Subset Selection Pr
 Check out `example.m` for an example.
 
 For better performance, the use of an optimized implementation of the SVD is recommended. https://es.mathworks.com/matlabcentral/fileexchange/47132-fast-svd-and-pca
+
+Author: Bruno Ordozgoiti
+
+If you use this code, please cite the following paper:
+
+Bruno Ordozgoiti, Sandra Gomez Canaval, Alberto Mozo, "A Fast Iterative 
+Algorithm for Improved Unsupervised Feature Selection". IEEE International 
+Conference on Data Mining, 2016.

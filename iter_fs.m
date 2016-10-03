@@ -1,13 +1,24 @@
 function [ R ] = iter_fs( data, k,  MAX_ITER, ZERO)
-%ITER_FS Chooses a set of k columns from the given data matrix that provide a good rank-k approximation
-  %   Arguments:
-  %    data: The input data matrix
-  %    k: The number of columns to choose
-  %    MAX_ITER: (Optional) The maximum number of iterations
-  %    ZERO: (Optional) The threshold below which scores are set to zero, to avoid numerical issues
-  %   
-  %   Output:
-  %    R: A set of column indices indicating the ones that were chosen
+% ITER_FS Chooses a set of k columns from the given data matrix that provide a good rank-k approximation
+%
+% Author: Bruno Ordozgoiti
+% Date: September 28, 2016
+%
+% If you use this code, please cite the following paper:
+%
+% Bruno Ordozgoiti, Sandra Gomez Canaval, Alberto Mozo, "A Fast Iterative 
+% Algorithm for Improved Unsupervised Feature Selection". IEEE International 
+% Conference on Data Mining, 2016.
+%
+%
+% Arguments:
+%    data: The input data matrix
+%    k: The number of columns to choose
+%    MAX_ITER: (Optional) The maximum number of iterations
+%    ZERO: (Optional) The threshold below which scores are set to zero, to avoid numerical issues
+%   
+%   Output:
+%    R: A set of column indices indicating the ones that were chosen
   
     if nargin < 4
         ZERO = 1e-5;
